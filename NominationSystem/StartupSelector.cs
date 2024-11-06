@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace NominationSystem
 {
-    public partial class Form1 : Form
+    public partial class StartupSelector : Form
     {
-        public Form1()
+        public StartupSelector()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new NominationWindow().Show();
         }
     }
 }
